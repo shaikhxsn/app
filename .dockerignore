@@ -1,0 +1,40 @@
+# Ignore bin and obj folders (build artifacts)
+bin/
+obj/
+
+# Ignore user-specific and temporary files
+.vscode/
+*.swp
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.cache
+*.userosscache
+*.sln.docstates
+
+# Ignore logs and generated files
+logs/
+*.log
+*.tlog
+
+# Ignore NuGet packages and lock files
+packages/
+.nuget/
+project.lock.json
+package-lock.json
+
+# Ignore Docker-related files (optional)
+.dockerignore
+Dockerfile
+
+# Ignore Git-related files
+.git/
+.gitignore
+
+# Ignore test results
+TestResults/
+coverage/
+*.trx
+
+# Ignore deployment files
+appsettings.Development.json
