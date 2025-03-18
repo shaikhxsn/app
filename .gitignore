@@ -1,0 +1,46 @@
+# Visual Studio-specific files
+.vs/
+*.user
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.cache
+*.ide/
+
+# Build output
+bin/
+obj/
+out/
+TestResults/
+AppPackages/
+*.Publish.xml
+*.exe
+*.dll
+*.pdb
+
+# User-specific settings
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+project.lock.json
+package-lock.json
+
+# Logs and database
+*.log
+*.tlog
+*.sqlite
+*.db
+
+# Rider / JetBrains files
+.idea/
+*.sln.iml
+
+# VS Code settings
+.vscode/
+
+# Other
+*.tmp
