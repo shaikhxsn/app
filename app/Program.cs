@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Hello World!");
+﻿Console.WriteLine("Hello from docker container!");
 // Console.WriteLine(StringUtils.AreAnagramsFrequency("listen", "silent"));
 // int[] arr = [1, 2, 3, 4, 5, 6, 7, 8];
 // ArrayUtils.LeftRotateCyclicReplacement(arr, 4);
