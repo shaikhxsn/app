@@ -15,15 +15,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Install .NET 9 Preview
-        run: |
-          wget https://download.visualstudio.microsoft.com/download/pr/9cb17329-16e6-4b89-9b51-b2b7a5ec6e49/6c50ec327efdfdd6d986aa2a42a263cb/dotnet-sdk-9.0.100-preview.4-linux-x64.tar.gz
-          mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-9.0.100-preview.4-linux-x64.tar.gz -C $HOME/dotnet
-          echo "$HOME/dotnet" >> $GITHUB_PATH
-          export DOTNET_ROOT=$HOME/dotnet
-
-      - name: Verify .NET Version
-        run: dotnet --version
+      - name: Set up .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x  # Uses the latest 8.0.x version
 
       - name: Restore dependencies
         run: dotnet restore
