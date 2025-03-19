@@ -35,9 +35,4 @@ public class StringUtils
 
         return true;
     }
-
-    // public static int[] RemoveDuplicates(int[] arr)
-    // {
-
-    // }
 }

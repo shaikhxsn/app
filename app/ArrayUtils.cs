@@ -43,4 +43,19 @@ internal class ArrayUtils
             end--;
         }
     }
+
+    public static int RemoveDuplicates(int[] arr)
+    {
+        if (arr.Length == 0) return 0; // Handle empty array
+
+        int uniquerIndex = 0;
+
+        for (int i = 1; i < arr.Length; i++)
+        {
+            if (arr[uniquerIndex] != arr[i])
+                arr[++uniquerIndex] = arr[i];
+        }
+
+        return uniquerIndex + 1;
+    }
 }
